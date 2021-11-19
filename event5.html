@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event OnSubmit</title>
+</head>
+<body>
+    <form name="form_daftar" onsubmit="onSubmit()" method="post">
+    Nama : <input type="text" name="nama"><br> <br>
+    Email : <input type="email" name="email"><br><br>
+    <button type="submit" id="tombol">Daftar</button>
+    </form>
+
+    <script>
+        function onSubmit(){
+            alert("Data Berhasil Disubmit");
+        }
+    </script>
+</body>
+</html>

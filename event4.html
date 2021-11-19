@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Event OnChange</title>
+</head>
+<body>
+
+    <p>Jenis Kelamin</p>
+    <form action="#">
+        <input type="radio" onchange="OnChange(this.value)" value="perempuan">Perempuan<br>
+        <input type="radio" onchange="OnChange(this.value)" value="laki-laki">Laki-Laki<br>
+    </form>
+
+    <script>
+        function OnChange(jk){
+            alert("Jenis kelamin anda adalah" + " " +jk);
+        }
+    </script>
+</body>
+</html>

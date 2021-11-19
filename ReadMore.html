@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Membuat Tombol Read More</title>
+</head>
+<body>
+    <h1>JavaScript Fundamental</h1>
+    <p id="artikel">JavaScropt akan membuat <a id="link" href="#" onclick="showMore()">. . . Read More</a>
+    </p>
+
+    <script>
+        function showMore(){
+            document.getElementById("artikel").innerHTML += "Halaman website lebih menarik.";
+            document.getElementById("link").style.display = "none";
+        }
+    </script>
+</body>
+</html>

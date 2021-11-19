@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+    <div align = "center">
+        <p>Silakan melakukan login terlebih dahulu</p>
+        <button onclick="tampilModal()" width="auto"> Login </button>
+    </div>
+
+    <div id="idModal" class="modal">
+        <form class="modal_content" method="post">
+            <div class="container">
+                <span onclick="tutupModal()" title="close modal" class="close"> &times;</span>
+                <label for="uname"><b>Username : </b></label><br>
+                <input type="text" name="username" id="username"><br>
+
+                <label for="pw"><b>Password : </b></label><br>
+                <input type="password" name="password" id="password"><br>
+
+                <input type="button" value="login" onclick="validate()" id="submit">
+
+            </div>
+
+            <div class="container" style="background-color: gray;">
+                <br> <b>Username : User <br> Password : 123</b>
+            </div>
+
+        </form>
+
+
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+</html>
